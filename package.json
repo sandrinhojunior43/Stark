@@ -1,0 +1,16 @@
+{
+  "name": "stark",
+  "private": true,
+  "version": "0.2.0",
+  "packageManager": "pnpm@11.25.0",
+  "engines": {
+    "node": ">=22.13.0 <25"
+  },
+  "scripts": {
+    "dev": "pnpm --filter @stark/mobile web",
+    "dev:native": "pnpm --filter @stark/mobile start",
+    "build": "pnpm --filter @stark/mobile build:web",
+    "typecheck": "pnpm -r typecheck",
+    "test": "pnpm --filter @stark/mobile test"
+  }
+}
